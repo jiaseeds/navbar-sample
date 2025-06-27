@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Optional mobile tweaks */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-right {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="#">🏠 Home</a>
+      <a href="#">Scene 1</a>
+      <a href="#">Scene 2</a>
+      <a href="#">Scene 3</a>
+    </div>
+    <div class="nav-right">
+      <a href="#">About</a>
+    </div>
+  </div>
+
+</body>
+</html>
